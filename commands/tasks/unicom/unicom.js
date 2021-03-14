@@ -155,7 +155,7 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-华为mate40pro(刮刮乐)
-  pawait scheduler.regTask('dailyVideoScratchcard', async (request) => {
+  await scheduler.regTask('dailyVideoScratchcard', async (request) => {
     await require('./dailyVideoScratchcard').doTask(request, options)
   }, taskOption)
 
