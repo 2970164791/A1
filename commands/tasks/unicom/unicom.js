@@ -140,9 +140,9 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-抓OPPO手机
-  //await scheduler.regTask('dailyGrabdollPage', async (request) => {
-    //await require('./dailyGrabdollPage').doTask(request, options)
-  //}, taskOption)
+  await scheduler.regTask('dailyGrabdollPage', async (request) => {
+    await require('./dailyGrabdollPage').doTask(request, options)
+  }, taskOption)
 
   // 首页-签到有礼-免费抽-拿666积分-豪礼大派送抽奖
   await scheduler.regTask('jflottery', async (request) => {
@@ -155,9 +155,9 @@ var start = async (params) => {
   }, taskOption)
 
   // 首页-签到有礼-免费抽-华为mate40pro(刮刮乐)
-  //pawait scheduler.regTask('dailyVideoScratchcard', async (request) => {
-    //await require('./dailyVideoScratchcard').doTask(request, options)
-  //}, taskOption)
+  pawait scheduler.regTask('dailyVideoScratchcard', async (request) => {
+    await require('./dailyVideoScratchcard').doTask(request, options)
+  }, taskOption)
 
   // 首页-签到有礼-免费抽-赢三星Galaxy Z(试试手气)
   // 活动已下线
